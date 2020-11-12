@@ -122,7 +122,7 @@ def googleDrive():
     gauth = GoogleAuth()
     gauth.LocalWebserverAuth()
     drive = GoogleDrive(gauth)
-    file = drive.CreateFile({'id': '1jbsMrmY5HnSdwP8H2Q6f9Ioi3NM8qTxkEvKg21GhcD0'})
+    file = drive.CreateFile({'id': 'INSERT FILE ID'})
     download_mimetype = 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
     file.GetContentFile(file['title']+'.xlsx', mimetype=download_mimetype)
 def getLstFromSheet():
